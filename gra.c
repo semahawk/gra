@@ -2,7 +2,7 @@
  * gra - Bardzo fajna gra.
  *
  *
- * Copyright: (c) by Szymon Urbaś <szymon.urbas@aol.com>
+ * Copyright: (c) by Szymon Urbas <szymon.urbas@aol.com>
  *
  * License: the MIT license
  *
@@ -19,36 +19,36 @@ int main(void)
 {
   int in;
 
-  o("Witamy w Grze. Twoim celem jest przejście Gry.\n");
-  o("Życzymy połamania nóg.\n\n");
+  o("Witamy w Grze. Twoim celem jest przejscie Gry.\n");
+  o("Zyczymy polamania nog.\n\n");
 
-  o("Zacząłeś grać w Grę.\n\n");
-  o("[1] Wygrywasz Grę.\n");
-  o("[2] Przegrywasz Grę.\n");
-  o("[3] Bierzesz czerwoną pigułkę.\n\n");
+  o("Zaczales grac w Gre.\n\n");
+  o("[1] Wygrywasz Gre.\n");
+  o("[2] Przegrywasz Gre.\n");
+  o("[3] Bierzesz czerwona pigułke.\n\n");
 
   o("Co robisz? ");
   i();
 
   switch (in){
-    case 1: o("\nWygrałeś Grę! Gratulacje!\n");
+    case 1: o("\nWygrales Gre! Gratulacje!\n");
             return 0;
-    case 2: o("\nJesteś frajerem.\n");
+    case 2: o("\nJestes frajerem.\n");
             return 1;
-    case 3: o("\nPostanawiasz wziąć czerwoną pigułkę. Czujesz się źle.\n\n");
-            o("[1] Idziesz rzygać do kibla.\n");
+    case 3: o("\nPostanawiasz wziac czerwona pigułke. Czujesz sie zle.\n\n");
+            o("[1] Idziesz rzygac do kibla.\n");
             o("[2] Umierasz.\n");
-            o("[3] Zaczynasz czuć się dobrze.\n\n");
+            o("[3] Zaczynasz czuc się dobrze.\n\n");
 
             o("Co robisz? ");
             i();
 
             switch (in){
-              case 1: o("Rzygasz do kibla i wyrzygujesz płuca. Przegrałeś!\n");
+              case 1: o("Rzygasz do kibla i wyrzygujesz pluca. Przegrales!\n");
                       return 0;
-              case 2: o("Umierasz. Przegrałeś!\n");
+              case 2: o("Umierasz. Przegrales!\n");
                       return 0;
-              case 3: o("Zaczynasz czuć się dobrze. Wygrałeś!\n");
+              case 3: o("Zaczynasz czuc sie dobrze. Wygrales!\n");
                       return 1;
             }
   }
