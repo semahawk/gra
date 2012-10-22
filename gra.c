@@ -13,7 +13,7 @@
 #include <stdio.h>
 
 #define o(x) printf(x)
-#define i()  scanf("%d", &in);
+#define i()  scanf("%d", &in)
 
 int main(void)
 {
